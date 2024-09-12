@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.line-container {
+    width: 100%; 
+    overflow: hidden; 
+    background:linear-gradient(rgb(235, 250, 105),transparent);
+    background-color: rgb(128, 224, 89); 
+    border: 3px solid black;
+    white-space: nowrap;
+    transform: rotate(5deg);
+    position: relative;
+    top: -40px
+  }
+
+  
+  .keep-out-line {
+    display: inline-block;
+    animation: scroll 20s linear infinite; 
+    white-space: nowrap; 
+  }
+  
+  .keep-out-line span {
+    display: inline-block;
+    padding: 0 30px; 
+    font-size: 30px; 
+    font-weight: bold;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-45%); 
+    }
+  }
+  
